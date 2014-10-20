@@ -1,0 +1,11 @@
+<h1>Cinebook#home</h1>
+<p>Find me in app/views/cinebook/home.html.erb</p>
+
+<%
+@book.each do |k|
+  key = k['key']  # keys are in the format '/books/{OLID}'
+  %>
+  	 1-	<%=key%>
+  <%
+end
+%>
